@@ -1,0 +1,57 @@
+<dx-data-grid id="gridContainer" style="margin: auto;width: 50%;" [dataSource]="users" [showBorders]="true"
+    [hoverStateEnabled]="true" (onRowClick)="onClick($event)" (onRowRemoving)="deleteUser($event)">
+
+    <dxo-editing
+    [allowUpdating]="false"
+    [allowAdding]="false"
+    [allowDeleting]="true"
+    mode="row"
+    [useIcons]="true">
+</dxo-editing>
+
+    <dxi-column dataField="id" caption="ID" [width]=50></dxi-column>
+    <dxi-column dataField="firstname" caption="Firstname"></dxi-column>
+    <dxi-column dataField="lastname" caption="Lastname"></dxi-column>
+    <dxi-column dataField="userType" caption="Type"></dxi-column>
+
+    <dxi-column type="buttons" [width]="50">
+        <dxi-button name="delete"></dxi-button>
+    </dxi-column>
+</dx-data-grid>
+<button (click)="addUser()">Add</button>
+
+<form [formGroup]="userForm" (ngSubmit)="onUserSave(userForm.value)" [hidden]="isUserFormHidden">
+
+    <div class="form-group">
+        <label for="id_label">
+            ID
+        </label>
+        <input id="id_label" type="number" formControlName="id" readonly>
+    </div>
+
+    <div class="form-group">
+        <label for="firstname_input">
+            Firstname
+        </label>
+        <input id="firstname_input" type="text" formControlName="firstname">
+    </div>
+
+    <div class="form-group">
+        <label for="lastname_input">
+            Lastname
+        </label>
+        <input id="lastname_input" type="text" formControlName="lastname">
+    </div>
+
+    <div class="form-group">
+        <label for="type_input">
+            Type
+        </label>
+        <select id="type_input" formControlName="userType">
+            <option *ngFor="let item of userTypeOptions" [value]="item" [label]="userTypes[item]"></option>
+        </select>
+    </div>
+
+    <button class="button" type="submit">Save</button>
+
+</form>
