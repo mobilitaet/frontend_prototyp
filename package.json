@@ -26,6 +26,7 @@
     "angular-datatables": "^9.0.2",
     "devextreme": "20.1.7",
     "devextreme-angular": "20.1.7",
+    "http-server": "^0.12.3",
     "material-table": "^1.69.0",
     "rxjs": "~6.5.5",
     "tslib": "^2.0.0",

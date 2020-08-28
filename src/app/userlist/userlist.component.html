@@ -1,4 +1,4 @@
-<dx-data-grid id="gridContainer" style="margin: auto;width: 50%;" [dataSource]="users" [showBorders]="true"
+<dx-data-grid id="gridContainer" [dataSource]="users" [showBorders]="true"
     [hoverStateEnabled]="true" (onRowClick)="onClick($event)" (onRowRemoving)="deleteUser($event)">
 
     <dxo-editing
