@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1598604946601,
+  "timestamp": 1598607622271,
   "index": "https://mobilitaet.github.io/prototyp/index.html",
   "assetGroups": [
     {
@@ -23,7 +23,7 @@
     },
     {
       "name": "assets",
-      "installMode": "lazy",
+      "installMode": "prefetch",
       "updateMode": "prefetch",
       "cacheQueryOptions": {
         "ignoreVary": true
