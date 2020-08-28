@@ -37,12 +37,22 @@ export class UserlistComponent implements OnInit {
   }
 
   public onUserSave(value) {
+    console.log(this.users.find((user: User) => user.id == value.id));
     if (this.users.find((user: User) => user.id == value.id) == undefined) {
+      console.log("new User");
       let user = this.userService.addUser(value);
       this.users.push(user);
     } else {
+      console.log("save user: ", value);
       this.userService.updateUser(value);
-      this.users[this.users.findIndex((user: User) => user.id == value.id)] = value;
+      for(let i = 0; i < this.users.length; i++)
+      {
+        if(this.users[i].id == value.id)
+        {
+          console.log(this.users[i], "=", value);
+          this.users[i] = value;
+        }
+      }
     }
     this.isUserFormHidden = true;
   }

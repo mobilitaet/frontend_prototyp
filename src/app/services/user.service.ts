@@ -7,7 +7,9 @@ import { User } from '../models';
 })
 export class UserService{
 
-  constructor() { }
+  constructor() { this.nextId = 5 }
+
+  private nextId: number;
 
   private users: User[] = [
     {
@@ -46,7 +48,7 @@ export class UserService{
   }
 
   public addUser(user: User): User {
-    user.id = this.users.length+1;
+    user.id = this.nextId++;
     this.users.push(user);
     return user;
   }
@@ -57,6 +59,6 @@ export class UserService{
 
   public updateUser(user: User) {
     this.removeUser(user);
-    this.addUser(user);
+    this.users.push(user);
   }
 }
