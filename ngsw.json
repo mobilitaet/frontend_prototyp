@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1598607622271,
+  "timestamp": 1598609252159,
   "index": "https://mobilitaet.github.io/prototyp/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "https://mobilitaet.github.io/prototyp/favicon.ico",
         "https://mobilitaet.github.io/prototyp/index.html",
-        "https://mobilitaet.github.io/prototyp/main.9b80e958e752c2414a72.js",
+        "https://mobilitaet.github.io/prototyp/main.f69bcd86b2de19a051b3.js",
         "https://mobilitaet.github.io/prototyp/manifest.webmanifest",
         "https://mobilitaet.github.io/prototyp/polyfills.a4021de53358bb0fec14.js",
         "https://mobilitaet.github.io/prototyp/runtime.e227d1a0e31cbccbf8ec.js",
@@ -58,9 +58,9 @@
     "https://mobilitaet.github.io/prototyp/dxicons.6a2ec193b22894e7a545.woff2": "400067b055d37a468dd104103223e48e11457b0e",
     "https://mobilitaet.github.io/prototyp/dxicons.cdb1ec408eddf1382d8b.woff": "5593306744dc65671dea803148a05e8141ef81d4",
     "https://mobilitaet.github.io/prototyp/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "https://mobilitaet.github.io/prototyp/index.html": "a28830c9718d7080ea209d5a726cdfce272c9144",
-    "https://mobilitaet.github.io/prototyp/main.9b80e958e752c2414a72.js": "c64276fc425b9bbf6564fbd61aecc2dd07d45c85",
-    "https://mobilitaet.github.io/prototyp/manifest.webmanifest": "e46cac881e8f5742ab963e19e51cac8d20ec6f7b",
+    "https://mobilitaet.github.io/prototyp/index.html": "a19fa06f067e8b67ab86a5f3212becb5143eb2cd",
+    "https://mobilitaet.github.io/prototyp/main.f69bcd86b2de19a051b3.js": "33eea89baf673b538b99295cf8e353a694fd08c0",
+    "https://mobilitaet.github.io/prototyp/manifest.webmanifest": "7158e534485449d36111af581f45c99414d0c2ea",
     "https://mobilitaet.github.io/prototyp/polyfills.a4021de53358bb0fec14.js": "b47435a9ef2a4829f2f9dfd35599bde3614981b1",
     "https://mobilitaet.github.io/prototyp/runtime.e227d1a0e31cbccbf8ec.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
     "https://mobilitaet.github.io/prototyp/styles.72f9244935c255eebd3a.css": "97cfb0cd833e2979d186f21fd9bf713d73530bcc"
