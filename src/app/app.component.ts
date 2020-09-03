@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { MessagingService } from './service/messaging.service';
+import { Token } from '@angular/compiler/src/ml_parser/lexer';
 
 @Component({
   selector: 'app-root',
