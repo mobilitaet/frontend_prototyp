@@ -9,6 +9,7 @@ import { environment } from '../environments/environment';
 import { DxDataGridModule } from 'devextreme-angular';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FileuploadComponent } from './fileupload/fileupload.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { FileuploadComponent } from './fileupload/fileupload.component';
     AppRoutingModule,
     DxDataGridModule,
     ReactiveFormsModule,
+    HttpClientModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],

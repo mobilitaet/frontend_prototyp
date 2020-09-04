@@ -9,7 +9,7 @@
     [useIcons]="true">
 </dxo-editing>
 
-    <dxi-column dataField="id" caption="ID" [width]=50></dxi-column>
+    <dxi-column dataField="_id" caption="ID" [width]=50></dxi-column>
     <dxi-column dataField="firstname" caption="Firstname"></dxi-column>
     <dxi-column dataField="lastname" caption="Lastname"></dxi-column>
     <dxi-column dataField="userType" caption="Type"></dxi-column>
@@ -26,7 +26,7 @@
         <label for="id_label">
             ID
         </label>
-        <input id="id_label" type="number" formControlName="id" readonly>
+        <input id="id_label" type="number" formControlName="_id" readonly>
     </div>
 
     <div class="form-group">

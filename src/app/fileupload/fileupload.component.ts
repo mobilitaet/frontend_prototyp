@@ -24,7 +24,6 @@ export class FileuploadComponent implements OnInit {
 
   public onFileUpload()
   {
-    console.log(this.selectedFile);
     let reader = new FileReader();
     reader.onload = function(e) {
       that.imageSource = e.target.result;
