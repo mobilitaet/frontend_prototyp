@@ -14,6 +14,7 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
 import { AngularFireModule } from '@angular/fire';
 import { MessagingService } from './service/messaging.service';
 import { AsyncPipe } from '../../node_modules/@angular/common';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [AppComponent, UserlistComponent, FileuploadComponent],
@@ -26,10 +27,8 @@ import { AsyncPipe } from '../../node_modules/@angular/common';
     AngularFireModule.initializeApp(environment.firebase),
     DxDataGridModule,
     ReactiveFormsModule,
-    ServiceWorkerModule.register('ngsw-worker.js', {
-      enabled: environment.production,
-    })
-    
+    HttpClientModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [MessagingService,AsyncPipe],
   bootstrap: [AppComponent],

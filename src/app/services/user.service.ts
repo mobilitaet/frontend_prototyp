@@ -1,64 +1,40 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { User } from '../models';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class UserService{
 
-  constructor() { this.nextId = 5 }
+  private baseURL = "https://www.mobilitaetproto.tk/";
 
-  private nextId: number;
+  constructor(private http: HttpClient) {}
 
-  private users: User[] = [
-    {
-      id: 1,
-      firstname: 'Manuel',
-      lastname: 'Neuer',
-      userType: 0,
-    },
-    {
-      id: 2,
-      firstname: 'Jerome',
-      lastname: 'Boateng',
-      userType: 0,
-    },
-    {
-      id: 3,
-      firstname: 'David',
-      lastname: 'Alaba',
-      userType: 0,
-    },
-    {
-      id: 4,
-      firstname: 'Hans-Dieter',
-      lastname: 'Flick',
-      userType: 1,
-    },
-  ];
-
-  public getUsers(): User[] {
-    return JSON.parse(JSON.stringify(this.users));
+  public getUsers(): Observable<User[]> {
+    console.log("GET USERS");
+    return this.http.get<User[]>(this.baseURL+"user");
   }
 
-  public getUser(id: number): User
+  public getUser(id: number): Observable<User>
   {
-    return this.users.find((user: User) => user.id == id);
+    console.log("GET USER: " + id);
+    return this.http.get<User>(this.baseURL+"user/"+id);
   }
 
-  public addUser(user: User): User {
-    user.id = this.nextId++;
-    this.users.push(user);
-    return user;
+  public addUser(user: User): Observable<User> {
+    console.log("ADD USER", user);
+    return this.http.post<User>(this.baseURL+"user",user);
   }
 
   public removeUser(user: User) {
-    this.users = this.users.filter((item: User) => item.id != user.id);
+    console.log("REMOVE USER", user);
+    this.http.delete<User>(this.baseURL+"user/"+user._id);
   }
 
   public updateUser(user: User) {
-    this.removeUser(user);
-    this.users.push(user);
+    console.log("UPDATE USER", user)
+    this.http.put<User>(this.baseURL+"user/"+user._id,user);
   }
 }

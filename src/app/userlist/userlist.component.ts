@@ -23,12 +23,14 @@ export class UserlistComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.users = this.userService.getUsers();
+    this.userService.getUsers().subscribe((users: User[]) => {
+      this.users = users
+    });
   }
 
   public onClick(event) {
     this.userForm = this.formBuilder.group({
-      id: event.data.id,
+      _id: event.data._id,
       firstname: event.data.firstname,
       lastname: event.data.lastname,
       userType: event.data.userType
@@ -37,19 +39,19 @@ export class UserlistComponent implements OnInit {
   }
 
   public onUserSave(value) {
-    console.log(this.users.find((user: User) => user.id == value.id));
-    if (this.users.find((user: User) => user.id == value.id) == undefined) {
-      console.log("new User");
-      let user = this.userService.addUser(value);
-      this.users.push(user);
+    if (this.users.find((user: User) => user._id == value._id) == undefined) {
+      this.userService.addUser(value).subscribe((user: User) => {
+        if(user != undefined && user != null)
+        {
+          this.users.push(user);
+        }
+      });
     } else {
-      console.log("save user: ", value);
       this.userService.updateUser(value);
       for(let i = 0; i < this.users.length; i++)
       {
-        if(this.users[i].id == value.id)
+        if(this.users[i]._id == value._id)
         {
-          console.log(this.users[i], "=", value);
           this.users[i] = value;
         }
       }
@@ -59,7 +61,7 @@ export class UserlistComponent implements OnInit {
 
   private resetUserForm() {
     this.userForm = this.formBuilder.group({
-      id: -1,
+      _id: -1,
       firstname: '',
       lastname: '',
       userType: 0
@@ -74,6 +76,6 @@ export class UserlistComponent implements OnInit {
   public deleteUser(event)
   {
     this.userService.removeUser(event.data);
-    this.users = this.users.filter((item: User) => item.id != event.data.id);
+    this.users = this.users.filter((item: User) => item._id != event.data._id);
   }
 }
