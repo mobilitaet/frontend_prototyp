@@ -24,7 +24,7 @@ export class MessagingService {
               if (this.readyState == 4 && this.status == 200) {
               }
             };
-            xhr.open("GET", "localhost:3000/admin", true);
+            xhr.open("GET", "https://www.mobilitaetproto.tk/", true);
             xhr.send(JSON.stringify({
               "token": token
             }));
