@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1599759652738,
+  "timestamp": 1599760538050,
   "index": "”https://mobilitaet.github.io/frontend_prototyp/”/index.html",
   "assetGroups": [
     {
@@ -15,7 +15,7 @@
         "”https://mobilitaet.github.io/frontend_prototyp/”/favicon.ico",
         "”https://mobilitaet.github.io/frontend_prototyp/”/firebase-messaging-sw.js",
         "”https://mobilitaet.github.io/frontend_prototyp/”/index.html",
-        "”https://mobilitaet.github.io/frontend_prototyp/”/main.8dca7d580f26c3baa1ba.js",
+        "”https://mobilitaet.github.io/frontend_prototyp/”/main.b5e13336bdb052b58019.js",
         "”https://mobilitaet.github.io/frontend_prototyp/”/manifest.webmanifest",
         "”https://mobilitaet.github.io/frontend_prototyp/”/polyfills.a4021de53358bb0fec14.js",
         "”https://mobilitaet.github.io/frontend_prototyp/”/runtime.7c011a4e57bfb1383a0c.js",
@@ -62,8 +62,8 @@
     "”https://mobilitaet.github.io/frontend_prototyp/”/dxicons.cdb1ec408eddf1382d8b.woff": "5593306744dc65671dea803148a05e8141ef81d4",
     "”https://mobilitaet.github.io/frontend_prototyp/”/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
     "”https://mobilitaet.github.io/frontend_prototyp/”/firebase-messaging-sw.js": "24df3189bd08406f7b8e15dbbe064aaa1a528965",
-    "”https://mobilitaet.github.io/frontend_prototyp/”/index.html": "f435afe1cb4dbac2cd44d2159ec1837071b7da0c",
-    "”https://mobilitaet.github.io/frontend_prototyp/”/main.8dca7d580f26c3baa1ba.js": "84efcd6fb66eff5b32790acbce5088613992b6b9",
+    "”https://mobilitaet.github.io/frontend_prototyp/”/index.html": "99172a1d99773c046c84f58939c2ae8eb97de2a1",
+    "”https://mobilitaet.github.io/frontend_prototyp/”/main.b5e13336bdb052b58019.js": "52361bb6f9072074d066d6088c064d403d6c8cc2",
     "”https://mobilitaet.github.io/frontend_prototyp/”/manifest.webmanifest": "7158e534485449d36111af581f45c99414d0c2ea",
     "”https://mobilitaet.github.io/frontend_prototyp/”/polyfills.a4021de53358bb0fec14.js": "b47435a9ef2a4829f2f9dfd35599bde3614981b1",
     "”https://mobilitaet.github.io/frontend_prototyp/”/runtime.7c011a4e57bfb1383a0c.js": "fed9f7a1bd47cca5a21c443e89dfa9b65480a627",
