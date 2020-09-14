@@ -24,6 +24,7 @@
     "@angular/router": "~10.0.11",
     "@angular/service-worker": "~10.0.11",
     "@material-ui/core": "^4.11.0",
+    "angular-cli-ghpages": "^0.6.2",
     "angular-datatables": "^9.0.2",
     "angularfire2": "^5.4.2",
     "devextreme": "20.1.7",
@@ -31,6 +32,8 @@
     "firebase": "^7.19.1",
     "http-server": "^0.12.3",
     "material-table": "^1.69.0",
+    "ngh": "^0.2.12",
+    "npx": "^10.2.2",
     "rxjs": "~6.5.5",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.3"
