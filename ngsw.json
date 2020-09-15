@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1600154703247,
+  "timestamp": 1600155603966,
   "index": "/frontend_prototyp/index.html",
   "assetGroups": [
     {
@@ -15,7 +15,7 @@
         "/frontend_prototyp/favicon.ico",
         "/frontend_prototyp/firebase-messaging-sw.js",
         "/frontend_prototyp/index.html",
-        "/frontend_prototyp/main.d2cf15ecacfff6f21d58.js",
+        "/frontend_prototyp/main.7b91cae33f4aaff2f1f5.js",
         "/frontend_prototyp/manifest.webmanifest",
         "/frontend_prototyp/polyfills.a4021de53358bb0fec14.js",
         "/frontend_prototyp/runtime.11bb067d477aa67be230.js",
@@ -62,8 +62,8 @@
     "/frontend_prototyp/dxicons.cdb1ec408eddf1382d8b.woff": "5593306744dc65671dea803148a05e8141ef81d4",
     "/frontend_prototyp/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
     "/frontend_prototyp/firebase-messaging-sw.js": "da64bd403fd097146bbb1c9a1f60925e27d0a57e",
-    "/frontend_prototyp/index.html": "e6f88b36152f0372c472a2741a9724cc10f98f5a",
-    "/frontend_prototyp/main.d2cf15ecacfff6f21d58.js": "64bdc13de059eb774e9041ca9136dfc7be380648",
+    "/frontend_prototyp/index.html": "4802a3ab10e18591ec5752869636e7575442b0be",
+    "/frontend_prototyp/main.7b91cae33f4aaff2f1f5.js": "a4af046c6cf844230790999776d246d8fe4d3cc9",
     "/frontend_prototyp/manifest.webmanifest": "09beac6767c7d7f88b29a4f5a6d25d55a88e0bf7",
     "/frontend_prototyp/polyfills.a4021de53358bb0fec14.js": "b47435a9ef2a4829f2f9dfd35599bde3614981b1",
     "/frontend_prototyp/runtime.11bb067d477aa67be230.js": "4d379271bec2dfe0ac7edb3bceb2fd491ca98a4d",
