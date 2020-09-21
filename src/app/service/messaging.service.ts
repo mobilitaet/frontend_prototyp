@@ -2,14 +2,9 @@ import { Injectable } from '@angular/core';
 import { AngularFireMessaging } from '@angular/fire/messaging';
 import { BehaviorSubject } from 'rxjs'
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 
 export class MessagingService {
-
-    public token: String = "undefined";
-
     currentMessage = new BehaviorSubject(null); constructor(private angularFireMessaging: AngularFireMessaging) {
       this.angularFireMessaging.messaging.subscribe(
         (_messaging) => {
@@ -22,7 +17,6 @@ export class MessagingService {
     requestPermission() {
       this.angularFireMessaging.requestToken.subscribe(
         (token) => {
-          this.token = token;
           console.log(token);
             let xhr = new XMLHttpRequest();
           
@@ -30,7 +24,7 @@ export class MessagingService {
               if (this.readyState == 4 && this.status == 200) {
               }
             };
-            xhr.open("POST", "https://www.mobilitaetproto.tk/admin", true);
+            xhr.open("GET", "https://www.mobilitaetproto.tk/admin", true);
             xhr.send(JSON.stringify({
               "token": token
             }));
