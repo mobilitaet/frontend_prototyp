@@ -40,6 +40,7 @@ export class UserlistComponent implements OnInit {
 
   public onUserSave(value) {
     if (this.users.find((user: User) => user._id == value._id) == undefined) {
+      value._id = this.users.length + 1;
       this.userService.addUser(value).subscribe((user: User) => {
         if(user != undefined && user != null)
         {
@@ -47,7 +48,9 @@ export class UserlistComponent implements OnInit {
         }
       });
     } else {
-      this.userService.updateUser(value);
+      this.userService.updateUser(value).subscribe((user: User) => {
+        this.users[this.users.indexOf(user)] = user;
+      });
       for(let i = 0; i < this.users.length; i++)
       {
         if(this.users[i]._id == value._id)
@@ -75,7 +78,7 @@ export class UserlistComponent implements OnInit {
 
   public deleteUser(event)
   {
-    this.userService.removeUser(event.data);
+    this.userService.removeUser(event.data).subscribe();
     this.users = this.users.filter((item: User) => item._id != event.data._id);
   }
 }
