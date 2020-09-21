@@ -1,0 +1,60 @@
+[debug] [2020-09-21T16:03:31.694Z] ----------------------------------------------------------------------
+[debug] [2020-09-21T16:03:31.697Z] Command:       /usr/bin/node /sbin/firebase deploy
+[debug] [2020-09-21T16:03:31.697Z] CLI Version:   8.10.0
+[debug] [2020-09-21T16:03:31.698Z] Platform:      linux
+[debug] [2020-09-21T16:03:31.698Z] Node Version:  v14.4.0
+[debug] [2020-09-21T16:03:31.698Z] Time:          Mon Sep 21 2020 18:03:31 GMT+0200 (Central European Summer Time)
+[debug] [2020-09-21T16:03:31.699Z] ----------------------------------------------------------------------
+[debug] [2020-09-21T16:03:31.699Z] 
+[debug] [2020-09-21T16:03:31.708Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-09-21T16:03:31.709Z] > authorizing via signed-in user
+[debug] [2020-09-21T16:03:31.710Z] [iam] checking project mobilitaetsprojektspike for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-09-21T16:03:31.714Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/mobilitaetsprojektspike:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2020-09-21T16:03:32.577Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 21 Sep 2020 16:03:32 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=617","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-09-21T16:03:32.580Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/mobilitaetsprojektspike  
+ 
+[debug] [2020-09-21T16:03:32.931Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 21 Sep 2020 16:03:32 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'mobilitaetsprojektspike'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2020-09-21T16:03:32.937Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/mobilitaetsprojektspike/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2020-09-21T16:03:34.366Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 21 Sep 2020 16:03:34 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[mobilitaetsprojektspike]: beginning deploy... 
+[info] i  hosting[mobilitaetsprojektspike]: found 26 files in dist/mobilitaetsprojektPrototyp 
+[debug] [2020-09-21T16:03:34.739Z] [hosting] hash cache [ZGlzdC9tb2JpbGl0YWV0c3Byb2pla3RQcm90b3R5cA] stored for 26 files
+[debug] [2020-09-21T16:03:34.740Z] [hosting][hash queue][FINAL] {"max":343,"min":34,"avg":52.653846153846146,"active":0,"complete":26,"success":26,"errored":0,"retried":0,"total":26,"elapsed":351}
+[debug] [2020-09-21T16:03:34.741Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/mobilitaetsprojektspike/versions/8312fde4a89c6982:populateFiles  
+ <request body omitted>
+[debug] [2020-09-21T16:03:35.923Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 21 Sep 2020 16:03:35 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-09-21T16:03:35.931Z] [hosting][populate queue][FINAL] {"max":1189,"min":1189,"avg":1189,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":1194}
+[debug] [2020-09-21T16:03:35.931Z] [hosting] uploads queued: 3
+[debug] [2020-09-21T16:03:38.256Z] [hosting][upload queue][FINAL] {"max":2331,"min":1923,"avg":2059.3333333333335,"active":0,"complete":3,"success":3,"errored":0,"retried":0,"total":3,"elapsed":2331}
+[info] ✔  hosting[mobilitaetsprojektspike]: file upload complete 
+[debug] [2020-09-21T16:03:38.258Z] [hosting] deploy completed after 3889ms
+[debug] [2020-09-21T16:03:38.259Z] [
+  {
+    "config": {
+      "public": "dist/mobilitaetsprojektPrototyp",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "mobilitaetsprojektspike"
+    },
+    "site": "mobilitaetsprojektspike",
+    "version": "sites/mobilitaetsprojektspike/versions/8312fde4a89c6982"
+  }
+]
+[info] i  hosting[mobilitaetsprojektspike]: finalizing version... 
+[debug] [2020-09-21T16:03:38.261Z] >>> HTTP REQUEST PATCH https://firebasehosting.googleapis.com/v1beta1/sites/mobilitaetsprojektspike/versions/8312fde4a89c6982?updateMask=status  
+ {"status":"FINALIZED"}
